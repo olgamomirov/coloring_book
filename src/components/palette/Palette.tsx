@@ -1,4 +1,3 @@
-import { defaultColors } from "../../helpers/helpers";
 import ColorField from "../color_field/ColorFiels";
 import styles from "./palette.module.css";
 
