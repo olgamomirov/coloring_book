@@ -1,5 +1,9 @@
-function ColorField ({}) {
-    return <div></div>
+interface Props {
+  color?: string;
 }
 
-export default ColorField
+function ColorField({ color = "#FFFFFF" }: Props) {
+  return <input type="color" value={color} />;
+}
+
+export default ColorField;
