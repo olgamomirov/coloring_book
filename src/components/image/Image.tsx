@@ -11,7 +11,7 @@ export default function Image({ svg }: Props) {
       onClick={(e) => {
         (e.target as HTMLInputElement).style.fill = activeColor;
       }}
-      className="min-w-full"
+      className="min-w-full  desktop:h-full desktop:w-auto desktop:flex"
     >
       {svg}
     </div>
