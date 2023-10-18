@@ -9,8 +9,6 @@ export default function Image({ svg }: Props) {
   return (
     <div
       onClick={(e) => {
-        if ((e.target as HTMLInputElement).style.fill !== "rgb(255, 255, 255)")
-          return;
         (e.target as HTMLInputElement).style.fill = activeColor;
       }}
       className="min-w-full  desktop:h-full desktop:w-auto desktop:flex"
