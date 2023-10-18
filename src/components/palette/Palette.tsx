@@ -1,11 +1,10 @@
-import ColorField from "../color_field/ColorFiels";
 import styles from "./palette.module.css";
 import useStore from "../../zustand";
 
 export default function Palette() {
   const changeActiveColor = useStore((state) => state.changeActiveColor);
   return (
-    <div className="flex flex-wrap justify-center w-72 h-72 relative">
+    <div className="flex flex-wrap justify-center w-auto h-1/2 absolute bottom-0 right-0">
       <img src="color-palette.png" />
       {/* red */}
       <div
@@ -50,7 +49,8 @@ export default function Palette() {
       {/* color picker */}
       <input
         type="color"
-        className="top-[41%] right-[33%]  w-[14%]  h-[17%] absolute cursor-pointer"
+        className="top-[41%] right-[33%]  w-[14%]  h-[17%] absolute cursor-pointer opacity-0"
+        onChange={(e) => changeActiveColor(e.target.value)}
       />
     </div>
   );
