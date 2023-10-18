@@ -3,6 +3,8 @@ import useStore from "../../zustand";
 
 export default function Palette() {
   const changeActiveColor = useStore((state) => state.changeActiveColor);
+  const activeColor = useStore((state) => state.activeColor);
+
   return (
     <div className="flex flex-wrap justify-center w-auto h-1/2 absolute bottom-0 right-0">
       <img src="color-palette.png" />
@@ -51,6 +53,7 @@ export default function Palette() {
         type="color"
         className="top-[41%] right-[33%]  w-[14%]  h-[17%] absolute cursor-pointer opacity-0"
         onChange={(e) => changeActiveColor(e.target.value)}
+        value={activeColor}
       />
     </div>
   );
