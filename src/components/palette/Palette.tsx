@@ -6,7 +6,7 @@ export default function Palette() {
   const activeColor = useStore((state) => state.activeColor);
 
   return (
-    <div className="flex flex-wrap justify-center w-[200px] h-[auto] absolute bottom-0 right-0">
+    <>
       <img src="color-palette.png" />
       {/* red */}
       <div
@@ -55,6 +55,6 @@ export default function Palette() {
         onChange={(e) => changeActiveColor(e.target.value)}
         value={activeColor}
       />
-    </div>
+    </>
   );
 }
