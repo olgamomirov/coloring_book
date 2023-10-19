@@ -1,4 +1,3 @@
-import styles from "./palette.module.css";
 import useStore from "../../zustand";
 
 export default function Palette() {
