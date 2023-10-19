@@ -49,12 +49,14 @@ export default function Palette() {
         onClick={() => changeActiveColor("#00beca")}
       ></div>
       {/* color picker */}
-      <input
-        type="color"
-        className="top-[41%] right-[33%]  w-[14%]  h-[17%] absolute cursor-pointer opacity-0"
-        onChange={(e) => changeActiveColor(e.target.value)}
-        value={activeColor}
-      />
+      <label>
+        <input
+          type="color"
+          className="top-[41%] right-[33%]  w-[14%]  h-[17%] absolute cursor-pointer opacity-0"
+          onChange={(e) => changeActiveColor(e.target.value)}
+          value={activeColor}
+        />
+      </label>
     </div>
   );
 }
