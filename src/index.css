@@ -18,3 +18,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.handle::before {
+  content: url("../public/move-icon.png");
+  cursor: pointer;
+}
+.handle {
+  position: absolute;
+  top: 0;
+}
