@@ -7,7 +7,7 @@ export default function Palette() {
 
   return (
     <div className="relative h-fit top-9">
-      <img src="color-palette.png" />
+      <img src="color-palette.png" alt="color palette" />
       {/* red */}
       <div
         className="bottom-[8%] left-[29%]  w-[16%]  h-[16%] absolute cursor-pointer"
